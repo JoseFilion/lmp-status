@@ -10,11 +10,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 0,
-    "timeDay": 0,
-    "timeWeek": 0,
-    "timeMonth": 0,
-    "timeYear": 0,
+    "time": 1626,
+    "timeDay": 1626,
+    "timeWeek": 1626,
+    "timeMonth": 1626,
+    "timeYear": 1626,
     "dailyMinutesDown": {}
   },
   {
@@ -41,16 +41,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/rp.iamlmp.com.ico",
     "slug": "downloads-and-streaming-rp",
     "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
+    "uptime": "59.82%",
+    "uptimeDay": "59.82%",
+    "uptimeWeek": "59.82%",
+    "uptimeMonth": "59.82%",
+    "uptimeYear": "59.82%",
     "time": 0,
     "timeDay": 0,
     "timeWeek": 0,
     "timeMonth": 0,
     "timeYear": 0,
-    "dailyMinutesDown": {}
+    "dailyMinutesDown": {
+      "2026-08-04": 0
+    }
   }
 ]
