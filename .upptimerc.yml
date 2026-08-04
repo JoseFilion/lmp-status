@@ -11,6 +11,10 @@ user-agent: JoseFilion
 # silently ignored. (GH_PAT is passed by the workflow itself, not via this list.)
 secrets:
   - NOTIFICATION_DISCORD_WEBHOOK_URL
+  # Custom alert text so the Discord feed names the SERVICE, never the backend
+  # hostname (default messages interpolate $SITE_URL).
+  - NOTIFICATIONS_UP_MESSAGE
+  - NOTIFICATIONS_DOWN_MESSAGE
 
 # Names are written for DJs, not engineers — this page is public.
 # `slug` is PINNED to each site's original auto-generated slug so the display
