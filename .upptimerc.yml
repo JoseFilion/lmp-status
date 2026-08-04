@@ -6,6 +6,12 @@ owner: JoseFilion
 repo: lmp-status
 user-agent: JoseFilion
 
+# Least privilege: only these secrets are exposed to the workflow. This list is
+# AUTHORITATIVE — any new notification provider must be added here or it will be
+# silently ignored. (GH_PAT is passed by the workflow itself, not via this list.)
+secrets:
+  - NOTIFICATION_DISCORD_WEBHOOK_URL
+
 # Names are written for DJs, not engineers — this page is public.
 # `slug` is PINNED to each site's original auto-generated slug so the display
 # name can be reworded without orphaning its history/graphs or breaking the
