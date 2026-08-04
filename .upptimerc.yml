@@ -33,6 +33,8 @@ sites:
       - 404
 
 status-website:
+  logoUrl: https://josefilion.github.io/lmp-status/lmp-logo.svg
+  themeUrl: https://josefilion.github.io/lmp-status/lmp-theme.css
   # No custom domain yet -> served under /lmp-status on github.io. If we later
   # point status.iamlmp.com here, swap baseUrl for `cname: status.iamlmp.com`.
   baseUrl: /lmp-status
@@ -44,6 +46,8 @@ status-website:
       href: /
     - title: IAMLMP.COM
       href: https://www.iamlmp.com
+    - title: Discord
+      href: https://discord.gg/iamlmp
 
 # Upptime also supports notifications (e.g. Discord webhook alerts on outages),
 # assigning issues, and more: https://upptime.js.org/docs/configuration
