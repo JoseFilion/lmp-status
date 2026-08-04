@@ -1,0 +1,45 @@
+/* LMP brand theme for the status page — same palette as the desktop app
+   (page #161616, cards #232323, nav #1b1b1b, brand red #fa3128).
+   Served at /lmp-theme.css and wired via status-website.themeUrl.
+   Variable names come from upptime/status-page's own themes — defining the
+   FULL set so this stands alone regardless of which base theme loads. */
+:root {
+  --body-background-color: #161616;
+  --body-text-color: #e8e8e8;
+  --card-background-color: #232323;
+  --nav-background-color: #1b1b1b;
+  --nav-border-bottom-color: #2a2a2a;
+  --nav-current-border-bottom-color: #fa3128;
+  --card-border-color: #333333;
+
+  /* down = the brand red; card tint matches the app's failure toast */
+  --down-border-left-color: #fa3128;
+  --down-background-color: #2b1715;
+  --degraded-border-left-color: #fdbc40;
+  --up-border-left-color: #35c94a;
+
+  --tag-color: #161616;
+  --tag-up-background-color: #35c94a;
+  --tag-down-background-color: #fa3128;
+  --tag-degraded-background-color: #fdbc40;
+  --change-background-color: #fdbc40;
+
+  --error-button-border-color: #d4422f;
+  --error-button-background-color: #fa3128;
+  --error-button-color: #ffffff;
+  --submit-button-border-color: #d4422f;
+  --submit-button-background-color: #fa3128;
+  --submit-button-color: #ffffff;
+
+  --graph-opacity: 1;
+  --graph-filter: none;
+}
+
+/* Match the app's type feel; keep the white LMP logo a sane size in the nav. */
+body {
+  font-family: "Inter", -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+nav img {
+  height: 26px;
+  width: auto;
+}
