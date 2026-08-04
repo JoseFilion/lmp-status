@@ -1,6 +1,6 @@
 [
   {
-    "name": "Website",
+    "name": "Website (iamlmp.com)",
     "url": "https://www.iamlmp.com",
     "icon": "https://icons.duckduckgo.com/ip3/www.iamlmp.com.ico",
     "slug": "website-iamlmp-com",
@@ -10,15 +10,15 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 1626,
-    "timeDay": 1626,
-    "timeWeek": 1626,
-    "timeMonth": 1626,
-    "timeYear": 1626,
+    "time": 1262,
+    "timeDay": 1262,
+    "timeWeek": 1262,
+    "timeMonth": 1262,
+    "timeYear": 1262,
     "dailyMinutesDown": {}
   },
   {
-    "name": "Browse & Search",
+    "name": "Record Pool — Browse & Search",
     "url": "https://api.iamlmp.com/wp-json/record-pool/v1/folders",
     "icon": "https://icons.duckduckgo.com/ip3/api.iamlmp.com.ico",
     "slug": "record-pool-api",
@@ -28,31 +28,31 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 746,
-    "timeDay": 746,
-    "timeWeek": 746,
-    "timeMonth": 746,
-    "timeYear": 746,
+    "time": 728,
+    "timeDay": 728,
+    "timeWeek": 728,
+    "timeMonth": 728,
+    "timeYear": 728,
     "dailyMinutesDown": {}
   },
   {
-    "name": "Downloads & Playback",
+    "name": "Record Pool — Downloads & Playback",
     "url": "https://rp.iamlmp.com",
     "icon": "https://icons.duckduckgo.com/ip3/rp.iamlmp.com.ico",
     "slug": "downloads-and-streaming-rp",
     "status": "down",
-    "uptime": "0.93%",
-    "uptimeDay": "0.93%",
-    "uptimeWeek": "0.93%",
-    "uptimeMonth": "0.93%",
-    "uptimeYear": "0.93%",
+    "uptime": "0.76%",
+    "uptimeDay": "0.76%",
+    "uptimeWeek": "0.76%",
+    "uptimeMonth": "0.76%",
+    "uptimeYear": "0.76%",
     "time": 0,
     "timeDay": 0,
     "timeWeek": 0,
     "timeMonth": 0,
     "timeYear": 0,
     "dailyMinutesDown": {
-      "2026-08-04": 23
+      "2026-08-04": 28
     }
   }
 ]
