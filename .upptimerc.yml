@@ -11,14 +11,14 @@ user-agent: JoseFilion
 # name can be reworded without orphaning its history/graphs or breaking the
 # labels on already-open incident issues. NEVER change a slug once it's live.
 sites:
-  - name: Website
+  - name: Website (iamlmp.com)
     slug: website-iamlmp-com
     url: https://www.iamlmp.com
 
   # The app's catalog: browsing, search, genres, artists. Unauthenticated probe,
   # so a healthy API answers 401 (the auth gate working); 200 accepted too in
   # case the route is ever made public.
-  - name: Browse & Search
+  - name: Record Pool — Browse & Search
     slug: record-pool-api
     url: https://api.iamlmp.com/wp-json/record-pool/v1/folders
     expectedStatusCodes:
@@ -28,7 +28,7 @@ sites:
   # The host that serves the actual mp3 bytes — downloads AND in-app previews.
   # ANY http answer means the web server is alive; its real failure mode is a
   # connection timeout (the 2026-08-04 hardware outage). 5xx still counts down.
-  - name: Downloads & Playback
+  - name: Record Pool — Downloads & Playback
     slug: downloads-and-streaming-rp
     url: https://rp.iamlmp.com
     expectedStatusCodes:
