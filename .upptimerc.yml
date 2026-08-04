@@ -6,22 +6,30 @@ owner: JoseFilion
 repo: lmp-status
 user-agent: JoseFilion
 
+# Names are written for DJs, not engineers — this page is public.
+# `slug` is PINNED to each site's original auto-generated slug so the display
+# name can be reworded without orphaning its history/graphs or breaking the
+# labels on already-open incident issues. NEVER change a slug once it's live.
 sites:
-  - name: Website (iamlmp.com)
+  - name: Website
+    slug: website-iamlmp-com
     url: https://www.iamlmp.com
 
-  # Unauthenticated probe: a healthy API answers 401 (auth gate working).
-  # 200 also accepted in case the route is ever made public.
-  - name: Record Pool API
+  # The app's catalog: browsing, search, genres, artists. Unauthenticated probe,
+  # so a healthy API answers 401 (the auth gate working); 200 accepted too in
+  # case the route is ever made public.
+  - name: Browse & Search
+    slug: record-pool-api
     url: https://api.iamlmp.com/wp-json/record-pool/v1/folders
     expectedStatusCodes:
       - 200
       - 401
 
-  # The download/streaming host (the actual mp3 bytes). ANY http answer means
-  # the web server is alive — its real failure mode is a connection timeout
-  # (like the 2026-08-04 hardware outage). 5xx still counts as down.
-  - name: Downloads & Streaming (rp)
+  # The host that serves the actual mp3 bytes — downloads AND in-app previews.
+  # ANY http answer means the web server is alive; its real failure mode is a
+  # connection timeout (the 2026-08-04 hardware outage). 5xx still counts down.
+  - name: Downloads & Playback
+    slug: downloads-and-streaming-rp
     url: https://rp.iamlmp.com
     expectedStatusCodes:
       - 200
@@ -35,6 +43,10 @@ sites:
 status-website:
   logoUrl: https://josefilion.github.io/lmp-status/lmp-logo.svg
   themeUrl: https://josefilion.github.io/lmp-status/lmp-theme.css
+  # Browser-tab icon: the real LMP app icon (copied from the desktop app's
+  # resources/), replacing Upptime's default mark.
+  favicon: https://josefilion.github.io/lmp-status/lmp-icon.png
+  faviconSvg: https://josefilion.github.io/lmp-status/lmp-icon.svg
   # No custom domain yet -> served under /lmp-status on github.io. If we later
   # point status.iamlmp.com here, swap baseUrl for `cname: status.iamlmp.com`.
   baseUrl: /lmp-status
