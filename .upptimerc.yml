@@ -1,31 +1,49 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+# LMP live status — https://josefilion.github.io/lmp-status
+# Monitored every ~5 minutes by GitHub Actions, hosted on GitHub Pages —
+# deliberately OFF LMP's own infrastructure, so the status page stays up when
+# our servers don't (2026-08-04 rp outage is exactly why this exists).
+owner: JoseFilion
+repo: lmp-status
+user-agent: JoseFilion
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Secret Site
-    url: $SECRET_SITE
+  - name: Website (iamlmp.com)
+    url: https://www.iamlmp.com
+
+  # Unauthenticated probe: a healthy API answers 401 (auth gate working).
+  # 200 also accepted in case the route is ever made public.
+  - name: Record Pool API
+    url: https://api.iamlmp.com/wp-json/record-pool/v1/folders
+    expectedStatusCodes:
+      - 200
+      - 401
+
+  # The download/streaming host (the actual mp3 bytes). ANY http answer means
+  # the web server is alive — its real failure mode is a connection timeout
+  # (like the 2026-08-04 hardware outage). 5xx still counts as down.
+  - name: Downloads & Streaming (rp)
+    url: https://rp.iamlmp.com
+    expectedStatusCodes:
+      - 200
+      - 301
+      - 302
+      - 400
+      - 401
+      - 403
+      - 404
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  # No custom domain yet -> served under /lmp-status on github.io. If we later
+  # point status.iamlmp.com here, swap baseUrl for `cname: status.iamlmp.com`.
+  baseUrl: /lmp-status
+  name: LMP Status
+  introTitle: "**LMP Record Pool** — live service status"
+  introMessage: Website, Record Pool API, and the download/streaming server — checked every ~5 minutes from infrastructure independent of ours.
   navbar:
     - title: Status
       href: /
-    - title: GitHub
-      href: https://github.com/$OWNER/$REPO
+    - title: IAMLMP.COM
+      href: https://www.iamlmp.com
 
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+# Upptime also supports notifications (e.g. Discord webhook alerts on outages),
+# assigning issues, and more: https://upptime.js.org/docs/configuration
