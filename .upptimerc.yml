@@ -51,12 +51,17 @@ sites:
       - 404
 
 status-website:
-  logoUrl: https://josefilion.github.io/lmp-status/lmp-logo.svg
-  themeUrl: https://josefilion.github.io/lmp-status/lmp-theme.css
+  # SAME-ORIGIN, ROOT-RELATIVE paths on purpose. These used to be absolute to
+  # josefilion.github.io/lmp-status/, which now 301s to http://status.iamlmp.com
+  # — an https->http downgrade the browser refuses for a stylesheet, so the page
+  # rendered completely unstyled. Relative paths inherit the page protocol and
+  # keep working once GitHub finishes issuing the HTTPS cert.
+  logoUrl: /lmp-logo.svg
+  themeUrl: /lmp-theme.css
   # Browser-tab icon: the real LMP app icon (copied from the desktop app's
   # resources/), replacing Upptime's default mark.
-  favicon: https://josefilion.github.io/lmp-status/lmp-icon.png
-  faviconSvg: https://josefilion.github.io/lmp-status/lmp-icon.svg
+  favicon: /lmp-icon.png
+  faviconSvg: /lmp-icon.svg
   # No custom domain yet -> served under /lmp-status on github.io. If we later
   # Served at status.iamlmp.com (DNS: CNAME status -> josefilion.github.io).
   # GitHub Pages needs this `cname` to answer on the custom domain — the old
