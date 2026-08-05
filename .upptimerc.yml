@@ -58,8 +58,10 @@ status-website:
   favicon: https://josefilion.github.io/lmp-status/lmp-icon.png
   faviconSvg: https://josefilion.github.io/lmp-status/lmp-icon.svg
   # No custom domain yet -> served under /lmp-status on github.io. If we later
-  # point status.iamlmp.com here, swap baseUrl for `cname: status.iamlmp.com`.
-  baseUrl: /lmp-status
+  # Served at status.iamlmp.com (DNS: CNAME status -> josefilion.github.io).
+  # GitHub Pages needs this `cname` to answer on the custom domain — the old
+  # `baseUrl: /lmp-status` sub-path form is what github.io serves without one.
+  cname: status.iamlmp.com
   name: LMP Status
   introTitle: "**LMP Record Pool** — live service status"
   introMessage: Website, Record Pool API, and the download/streaming server — checked every ~5 minutes from infrastructure independent of ours.
