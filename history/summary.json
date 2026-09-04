@@ -40,20 +40,21 @@
     "url": "https://rp.iamlmp.com",
     "icon": "https://icons.duckduckgo.com/ip3/rp.iamlmp.com.ico",
     "slug": "downloads-and-streaming-rp",
-    "status": "down",
-    "uptime": "99.14%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "99.14%",
-    "uptimeYear": "99.14%",
-    "time": 705,
-    "timeDay": 491,
-    "timeWeek": 577,
-    "timeMonth": 705,
-    "timeYear": 705,
+    "status": "up",
+    "uptime": "98.01%",
+    "uptimeDay": "64.65%",
+    "uptimeWeek": "94.95%",
+    "uptimeMonth": "97.98%",
+    "uptimeYear": "98.01%",
+    "time": 704,
+    "timeDay": 576,
+    "timeWeek": 587,
+    "timeMonth": 704,
+    "timeYear": 704,
     "dailyMinutesDown": {
       "2026-08-04": 217,
-      "2026-08-06": 160
+      "2026-08-06": 160,
+      "2026-09-04": 509
     }
   }
 ]
