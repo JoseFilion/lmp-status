@@ -50,6 +50,29 @@ sites:
       - 403
       - 404
 
+  # 🔴 The probe above CANNOT see a database failure. It hits the bare root, and
+  # the root answers 403 whether or not MariaDB is alive — Apache denies it before
+  # PHP ever runs. On 2026-09-02 MariaDB died while Apache kept serving: real
+  # stream requests returned 500 for five hours while this page stayed green, and
+  # the outage was found by the owner rather than by monitoring.
+  #
+  # This URL runs the REAL handler instead: index.php validates the token, which
+  # means loading PHP, connecting to MariaDB and querying mp3s.
+  #   healthy      -> 401  (PHP ran, reached the DB, rejected the token)
+  #   MariaDB down -> 500  (counts down)
+  #   host down    -> timeout (counts down)
+  # So one probe covers all three failure modes, where the root covers only the
+  # last. No credentials are involved and none are needed — the token is invalid
+  # ON PURPOSE, and 401 is the healthy answer. Do not "fix" it with a real token.
+  - name: Record Pool — Track Access
+    slug: record-pool-track-access
+    # Quoted (unlike the others) because this is the only URL with a query string:
+    # `&` is an anchor indicator in YAML and `?` a mapping-key indicator, and
+    # quoting removes any doubt about how a parser reads them.
+    url: "https://rp.iamlmp.com/?type=audio&stream=1&token=invalidtokenfortesting0000000000000000"
+    expectedStatusCodes:
+      - 401
+
 status-website:
   # ABSOLUTE, on the site's OWN domain. Two traps here:
   #  - pointing at the old josefilion.github.io/lmp-status/ now 301s to http://,
