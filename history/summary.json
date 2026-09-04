@@ -13,7 +13,7 @@
     "time": 906,
     "timeDay": 247,
     "timeWeek": 516,
-    "timeMonth": 906,
+    "timeMonth": 895,
     "timeYear": 906,
     "dailyMinutesDown": {}
   },
@@ -31,7 +31,7 @@
     "time": 418,
     "timeDay": 160,
     "timeWeek": 278,
-    "timeMonth": 418,
+    "timeMonth": 395,
     "timeYear": 418,
     "dailyMinutesDown": {}
   },
@@ -41,11 +41,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/rp.iamlmp.com.ico",
     "slug": "downloads-and-streaming-rp",
     "status": "up",
-    "uptime": "98.01%",
+    "uptime": "98.02%",
     "uptimeDay": "64.65%",
     "uptimeWeek": "94.95%",
-    "uptimeMonth": "97.98%",
-    "uptimeYear": "98.01%",
+    "uptimeMonth": "98.21%",
+    "uptimeYear": "98.02%",
     "time": 704,
     "timeDay": 576,
     "timeWeek": 587,
@@ -56,5 +56,23 @@
       "2026-08-06": 160,
       "2026-09-04": 509
     }
+  },
+  {
+    "name": "Record Pool — Track Access",
+    "url": "https://rp.iamlmp.com/?type=audio&stream=1&token=invalidtokenfortesting0000000000000000",
+    "icon": "https://icons.duckduckgo.com/ip3/rp.iamlmp.com.ico",
+    "slug": "record-pool-track-access",
+    "status": "up",
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
+    "time": 0,
+    "timeDay": 0,
+    "timeWeek": 0,
+    "timeMonth": 0,
+    "timeYear": 0,
+    "dailyMinutesDown": {}
   }
 ]
