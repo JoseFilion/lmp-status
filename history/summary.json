@@ -62,19 +62,19 @@
     "url": "https://rp.iamlmp.com/?type=audio&stream=1&token=invalidtokenfortesting0000000000000000",
     "icon": "https://icons.duckduckgo.com/ip3/rp.iamlmp.com.ico",
     "slug": "record-pool-track-access",
-    "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "99.99%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
-    "time": 540,
-    "timeDay": 194,
-    "timeWeek": 372,
-    "timeMonth": 351,
-    "timeYear": 540,
+    "status": "up",
+    "uptime": "99.96%",
+    "uptimeDay": "98.25%",
+    "uptimeWeek": "99.75%",
+    "uptimeMonth": "99.94%",
+    "uptimeYear": "99.96%",
+    "time": 539,
+    "timeDay": 290,
+    "timeWeek": 384,
+    "timeMonth": 355,
+    "timeYear": 539,
     "dailyMinutesDown": {
-      "2026-10-24": 0
+      "2026-10-24": 25
     }
   }
 ]
