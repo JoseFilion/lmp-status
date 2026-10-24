@@ -1,7 +1,7 @@
 url: https://rp.iamlmp.com/?type=audio&stream=1&token=invalidtokenfortesting0000000000000000
-status: down
-code: 500
-responseTime: 53
-lastUpdated: 2026-10-24T00:01:45.623Z
+status: up
+code: 401
+responseTime: 482
+lastUpdated: 2026-10-24T00:26:53.202Z
 startTime: 2026-09-04T21:35:44.835Z
 generator: Upptime <https://github.com/upptime/upptime>
