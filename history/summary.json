@@ -4,19 +4,19 @@
     "url": "https://www.iamlmp.com",
     "icon": "https://icons.duckduckgo.com/ip3/www.iamlmp.com.ico",
     "slug": "website-iamlmp-com",
-    "status": "down",
+    "status": "up",
     "uptime": "100.00%",
-    "uptimeDay": "99.99%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
+    "uptimeDay": "99.68%",
+    "uptimeWeek": "99.95%",
+    "uptimeMonth": "99.99%",
     "uptimeYear": "100.00%",
-    "time": 914,
-    "timeDay": 9672,
-    "timeWeek": 2799,
-    "timeMonth": 1174,
-    "timeYear": 914,
+    "time": 907,
+    "timeDay": 6509,
+    "timeWeek": 2508,
+    "timeMonth": 1144,
+    "timeYear": 907,
     "dailyMinutesDown": {
-      "2026-11-12": 0
+      "2026-11-12": 5
     }
   },
   {
