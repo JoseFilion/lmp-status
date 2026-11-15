@@ -4,18 +4,20 @@
     "url": "https://www.iamlmp.com",
     "icon": "https://icons.duckduckgo.com/ip3/www.iamlmp.com.ico",
     "slug": "website-iamlmp-com",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
+    "uptimeDay": "99.73%",
+    "uptimeWeek": "99.96%",
+    "uptimeMonth": "99.99%",
     "uptimeYear": "100.00%",
     "time": 898,
     "timeDay": 555,
     "timeWeek": 2522,
     "timeMonth": 1154,
     "timeYear": 898,
-    "dailyMinutesDown": {}
+    "dailyMinutesDown": {
+      "2026-11-15": 4
+    }
   },
   {
     "name": "Record Pool — Browse & Search",
